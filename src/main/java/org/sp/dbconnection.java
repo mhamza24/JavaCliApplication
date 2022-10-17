@@ -13,8 +13,10 @@ public class dbconnection
     {
         try
         {
+            
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/summerProject","root","1234");
+                                                          //set password according to your localhost
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/summerProject","root","");
             st=con.createStatement();
 
         }
